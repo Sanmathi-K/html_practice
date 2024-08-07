@@ -6,6 +6,213 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>WEBPAGE</h1>
+    <p>This is a paragraph</p>
+    <p><strong>text is bold</strong></p>
+    <p><em>italic paragraph</em></p>
+    <p><mark>highlighted test</mark></p>
+    <p><del>paragraph crossed out</del></p>
+    <p>H<sub>2</sub>O</p>
+    <P>X<sup>2</sup></P>
+    <p><span style="font-weight: bold;">This text is bold.</span></p>
+    <h1>Table Tags in HTML</h1>
     
+    <!-- Basic Table -->
+    <h2>Basic Table</h2>
+    <table border="1">
+    <!-- <table>: Defines a table to organize data into rows and columns. -->
+        <tr>
+        <!-- <tr>: Represents a table row, containing table cells (data or header cells). -->
+            <th>Header 1</th>
+            <!-- <th>: Defines a table header cell, typically used to represent column headers in a table. -->
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+    <!-- Explanation: The &lt;table&gt; tag is used to create a table in HTML. The &lt;tr&gt; tag represents a table row, and the &lt;th&gt; and &lt;td&gt; tags represent table header cells and data cells, respectively. In this example, we have a basic table with three columns and two rows. -->
+
+    <!-- Table with Header Groups -->
+    <h2>Table with Header Groups</h2>
+    <table border="1">
+        <thead>
+        <!--     <thead>: Groups the table header content (column headers) in the table. -->
+            <tr>
+                <th colspan="2">Header Group 1</th>
+                <th colspan="2">Header Group 2</th>
+                <th colspan="1">Header Group 3</th>
+            </tr>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- <tbody>: Groups the table body content (data cells) in the table. -->
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <!--  <td>: Represents a table data cell, used to contain data within a table row. -->
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+                <td>Row 1, Cell 4</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+                <td>Row 2, Cell 4</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Explanation: In this example, we have a table with twso header groups defined using the &lt;thead&gt; element. The &lt;colspan&gt; attribute is used to span multiple columns for each header group. The &lt;tbody&gt; element is used to contain the table body. -->
+
+    <!-- Table with Caption -->
+    <h2>Table with Caption</h2>
+    <table border="">
+        <caption>Table Caption</caption>
+        <!-- <caption>: Provides a caption or title for the table, describing its content. -->
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+    <!-- Explanation: The &lt;caption&gt; tag is used to add a caption or title to the table. It provides a description or summary of the table's content. In this example, we have a table with a caption "Table Caption." -->
+    <ul>
+        <li>A</li>
+        <li>
+          B
+          <ol>
+            <li>B1</li>
+            <li>B2
+              <ul>
+                <li>B2a
+                  <ul>
+                    <li>B2aa</li>
+                    <li>B2ab</li>
+                  </ul>
+                </li>
+                <li>B2b</li>
+                <li>B2c</li>
+              </ul>
+            </li>
+            <li>B3
+              <ol>
+                <li>B31</li>
+                <li>B32</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>C</li>
+      </ul>
+
+
+
+
+
+
+
+
+
+      <header>
+        <h1>Website Header</h1>
+        <!-- The <header> tag is used to define the header section of a document. -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- The <nav> tag is used to define a navigation menu. -->
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <header>
+                <h2>Article Title</h2>
+            </header>
+            <!-- The <article> tag is used to represent an independent piece of content. -->
+            <section>
+                <h3>Section 1</h3>
+                <!-- The <section> tag is used to define a section within an article. -->
+                <p>This is the content of Section 1.</p>
+            </section>
+            <section>
+                <h3>Section 2</h3>
+                <p>This is the content of Section 2.</p>
+            </section>
+            <footer>
+                <p>Published on <time datetime="2023-07-24">July 24, 2023</time>.</p>
+                <!-- The <footer> tag is used to define the footer section of an article. The <time> tag is used to represent a date or time. -->
+            </footer>
+        </article>
+
+        <aside>
+            <h2>Related Information</h2>
+            <!-- The <aside> tag is used to define content that is tangentially related to the content around it. -->
+            <section>
+                <h3>Section 3</h3>
+                <p>This is some additional information.</p>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <!-- The <footer> tag is used to define the footer section of a document. -->
+    </footer>
+
+    <details>
+        <summary>Click to Show/Hide Details</summary>
+        <!-- The <details> tag is used to create a disclosure widget. The <summary> tag is used as the visible heading for the details element. When clicked, it shows or hides the content inside the <details> element. -->
+        <p>This is a hidden content that will be revealed when the summary is clicked.</p>
+    </details>
+
+    <figure>
+        <img src="image.jpg" alt="Image Caption">
+        <!-- The <figure> tag is used to contain any content that is referenced from the main content. It is often used for images and illustrations. -->
+        <figcaption>Image Caption</figcaption>
+        <!-- The <figcaption> tag is used to provide a caption or description for the content inside the <figure> tag. -->
+    </figure>
+
+
+    <div>
+        <p>HI</p>
+    </div>
+
+
+    <p>Embedding a multimedia file (video) using the &lt;object&gt; tag:</p>
+    <object data="mov_bbb.mp4" type="video/mp4">
+        <p>Your browser does not support the video tag.</p>
+    </object>
+    <p>Displaying a local image using the &lt;img&gt; tag:</p>
 </body>
 </html>
+
+
+    
+    
+   
+
+    
+    

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style>
+        h1
+        {
+            background-color: brown;
+            color: aliceblue;
+        }
+        .submit,button{
+                background-color: blueviolet;
+                color: aliceblue;
+                font-size: 20px;
+                border-radius: 20px;
+                border-color: blueviolet;
+                display: inline;
+                width: 120px;
+                border: none;
+            
+        }
+        .submit:hover
+        {
+            border-radius: 0;
+        }
+         .name
+        {
+            color: rebeccapurple;
+        }
+        #name,#country,#message,#button
+        {
+            height: 25px;
+            /*padding-top: 10px;*/
+            margin-top: 20px;
+            
+        }
+        #name
+        {
+            margin-bottom: 20px;
+        }
+        form,h2
+        {
+            text-align:justify;
+            margin-left: 90vh;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1 >Hello</h1>
+    <h1>Hi</h1>
+    <p>this is a paragraph</p>
+    <button onclick="alert('Button clicked!')">Click Me</button>
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required class="name">
+        <input type="submit" class="submit" value="Submit">
+    </form>
+    <h1>Form Tags in HTML</h1>
+    
+    <!-- Simple Form -->
+    <h2>Simple Form</h2>
+    <form action="d.html">
+        <!-- Text Input -->
+        <!-- Text Input: Used to get single-line text input from the user. -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        <label id="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="50" required></textarea><br>
+        <button type="submit" id="button">Submit</button>
+    </form>
+</body>
+</html>
