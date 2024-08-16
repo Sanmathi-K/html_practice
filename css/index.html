@@ -11,6 +11,18 @@
             background-color: brown;
             color: aliceblue;
         }
+        p.center 
+        {
+            font-size: 22px;
+            color: brown;
+        }
+        .one
+        {
+            color: rgb(36, 72, 181);   
+            font-size: 20px;
+            text-align:justify;
+            margin-left: 90vh;
+        }
         .submit,button{
                 background-color: blueviolet;
                 color: aliceblue;
@@ -41,32 +53,44 @@
         {
             margin-bottom: 20px;
         }
-        form,h2
+        form
         {
             text-align:justify;
             margin-left: 90vh;
+        }
+        label{
+            font-size: 20px;
+        }
+        *
+        {
+            background-color: antiquewhite;
+        }
+        img{
+            justify-content: center;
+            width: 320px;
+            height:200 ;
+            padding-top: 20px;
+
         }
         
     </style>
 </head>
 <body>
-
-    <h1 >Hello</h1>
-    <h1>Hi</h1>
-    <p>this is a paragraph</p>
-    <button onclick="alert('Button clicked!')">Click Me</button>
+    <div class="center">
+        <h1 >Hello</h1>
+        <h1>Hi</h1>
+        <p style="font-size: 32px;">this is a paragraph that is written</p>
+        <button onclick="alert('Button clicked!')">Click Me</button>
+    </div>
     <form action="/submit" method="POST" enctype="multipart/form-data">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required class="name">
         <input type="submit" class="submit" value="Submit">
     </form>
     <h1>Form Tags in HTML</h1>
-    
-    <!-- Simple Form -->
-    <h2>Simple Form</h2>
+    <h2 class="one">Simple Form</h2>
     <form action="d.html">
-        <!-- Text Input -->
-        <!-- Text Input: Used to get single-line text input from the user. -->
+    
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
         <label id="gender">Gender:</label>
@@ -83,7 +107,8 @@
         </select><br>
         <label for="message">Message:</label>
         <textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="50" required></textarea><br>
-        <button type="submit" id="button">Submit</button>
+        <button type="submit" id="button">Submit</button><br>
+        <img src="about.png">
     </form>
 </body>
 </html>
