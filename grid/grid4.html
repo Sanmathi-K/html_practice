@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: grid;
+            background-color: aqua;
+            height:400px;
+            width: 450px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 2px;
+        }
+        .one
+        {
+            background-color: yellowgreen;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            
+        }
+        .two
+        {
+            background-color: blueviolet;
+        }
+        .three
+        {
+            background-color: crimson;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end: 7;
+        }
+        .four
+        {
+            background-color: blueviolet;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .five
+        {
+            background-color: darkblue;
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-end: 3;
+            grid-column-start: 1;
+            
+
+        }
+        .six
+        {
+            background-color: darkblue;
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            
+        }
+        .seven
+        {
+            background-color: blueviolet;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 5;
+            grid-column-end: 7;
+            
+        }
+        .eight
+        {
+            background-color: blueviolet;
+            grid-row-start: 6;
+            grid-row-end: 7;
+           
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        
+       
+       
+        
+        
+    </div>
+</body>
+</html>
