@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+          background-color: yellow;
+          font-weight: bold;
+        }
+        #dynamicElement {
+          color: red;
+        }
+      </style>
+</head>
+<body>
+    <h1 id="header">HEllo,World</h1>
+    <p class="intro">This is a paragrap</p>
+    <p class="intro">This is another paragraph</p>
+    <div id="container">
+        <p>This is inside div</p>
+    </div>
+    <button id="changeText">Change Text</button>
+    <button id="addElement">Add Element</button>
+    <button id="toggleClass">Toggle Highlight</button>
+    <form id="myForm">
+        <input type="text" id="nameInput" value="John Doe" />
+        <input type="submit" value="Submit" />
+      </form>
+      <script>
+        const header=document.getElementById("header");
+        const paragraphs = document.getElementsByClassName("intro");
+        const container = document.querySelector("#container");
+        const allParagraphs = document.querySelectorAll("p");
+        header.innerHTML="welcome to dom manipulation demo!"
+        paragraphs[0].textContent = "This paragraph text has been modified.";
+        const newElement = document.createElement("h1");
+        newElement.textContent = "This is a new dynamically created paragraph.";
+        container.appendChild(newElement);
+
+        const changeTextButton = document.getElementById("changeText");
+        changeTextButton.addEventListener("click", function () {
+        header.innerHTML = "Text changed by button click!";
+      });
+
+      const addElementButton = document.getElementById("addElement");
+      addElementButton.addEventListener("click", function () {
+        const anotherElement = document.createElement("p");
+        anotherElement.id = "dynamicElement";
+        anotherElement.textContent = "Another paragraph added dynamically.";
+        container.appendChild(anotherElement);
+      });
+      const toggleClassButton = document.getElementById("toggleClass");
+      toggleClassButton.addEventListener("click", function () {
+        newElement.classList.toggle("highlight");
+      });
+      const firstParagraph = container.firstChild; // Accesses the first child node
+      console.log("First child node inside container:", firstParagraph);
+      const form = document.getElementById("myForm");
+      const nameInput = document.getElementById("nameInput");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevents form submission
+        alert("Form Submitted! Name: " + nameInput.value);
+      });
+      header.classList.add("highlight");
+      header.style.color = "blue"; 
+      </script>
+
+    
+</body>
+</html>
